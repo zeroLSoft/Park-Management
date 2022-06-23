@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CasualManagmantControl">
+   <children>
+      <Pane prefHeight="462.0" prefWidth="576.0">
+         <children>
+            <Label layoutX="64.0" layoutY="23.0" text="Casual Management">
+               <font>
+                  <Font name="System Bold Italic" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="113.0" text="Space available:" />
+            <Label fx:id="IDtxt" layoutX="157.0" layoutY="113.0" prefHeight="17.0" prefWidth="45.0" />
+            <Label layoutX="65.0" layoutY="317.0" text="ID:" />
+            <TextField fx:id="idtxt" layoutX="128.0" layoutY="313.0" />
+            <Label layoutX="65.0" layoutY="154.0" text="OrderID:" />
+            <Label layoutX="65.0" layoutY="265.0" />
+            <Label layoutX="64.0" layoutY="282.0" text="If subscriber, enter Subscription Number, if not, enter ID" />
+            <Label layoutX="65.0" layoutY="240.0" text="subscriber?" />
+            <CheckBox fx:id="yes" layoutX="148.0" layoutY="240.0" mnemonicParsing="false" text="yes" />
+            <CheckBox fx:id="no" layoutX="217.0" layoutY="240.0" mnemonicParsing="false" text="no" />
+            <Label fx:id="Ordertxt" layoutX="115.0" layoutY="154.0" prefHeight="17.0" prefWidth="119.0" />
+            <Button fx:id="btnEnter" layoutX="62.0" layoutY="372.0" mnemonicParsing="false" onAction="#getEnterBtn" text="Aprrove entry" />
+            <Button fx:id="btnCancel" layoutX="406.0" layoutY="372.0" mnemonicParsing="false" onAction="#getReturnBtn" text="Return" />
+            <Label layoutX="64.0" layoutY="195.0" text="Subscriber cost:" />
+            <Label layoutX="292.0" layoutY="195.0" text="Casual cost:" />
+            <Label fx:id="casual" layoutX="360.0" layoutY="195.0" prefHeight="17.0" prefWidth="51.0" />
+            <Label fx:id="subs" layoutX="172.0" layoutY="195.0" prefHeight="17.0" prefWidth="62.0" />
+            <ImageView fitHeight="56.0" fitWidth="51.0" layoutX="447.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="register.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

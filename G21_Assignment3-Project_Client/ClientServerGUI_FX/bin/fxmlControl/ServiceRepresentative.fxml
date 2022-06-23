@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="314.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" prefHeight="51.0" prefWidth="184.0" text="Go Nature" textFill="#53a35d">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="72.0" prefHeight="26.0" prefWidth="184.0" text="Service representative">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddSub" layoutX="201.0" layoutY="113.0" mnemonicParsing="false" onAction="#getAddSubBtn" text="Add Subscriber" />
+      <Button fx:id="btnAddInst" layoutX="203.0" layoutY="157.0" mnemonicParsing="false" onAction="#getAddInstBtn" text="Add Instructor" />
+      <Button fx:id="btnBack" layoutX="218.0" layoutY="202.0" mnemonicParsing="false" onAction="#getBackBtn" text="Sign Out" />
+      <ImageView fitHeight="69.0" fitWidth="97.0" layoutX="356.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="service.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ParkPriceController">
+   <children>
+      <Label layoutX="116.0" layoutY="139.0" text="Personal/Family Visit" />
+      <Label layoutX="308.0" layoutY="139.0" prefHeight="17.0" prefWidth="151.0" text="\% discount from the full price" />
+      <Label layoutX="224.0" layoutY="52.0" text="Park Price">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" prefHeight="62.0" prefWidth="216.0" text="GoNature" textAlignment="CENTER" textFill="#38ab20">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="100.0" text="The price of the park" />
+      <Label layoutX="282.0" layoutY="100.0" text="15 Nis" />
+      <Label layoutX="116.0" layoutY="156.0" text="Pre-booked" />
+      <Label layoutX="382.0" layoutY="158.0" text="\% discount for subscribers" />
+      <Label layoutX="115.0" layoutY="208.0" text="Casual visitor" />
+      <Label layoutX="114.0" layoutY="191.0" text="Personal/Family Visit" />
+      <Label layoutX="283.0" layoutY="191.0" text="Full price" />
+      <Label layoutX="381.0" layoutY="210.0" text="\% discount for subscribers" />
+      <Label layoutX="116.0" layoutY="249.0" text="Group visit" />
+      <Label layoutX="116.0" layoutY="267.0" text="Pre-booked" />
+      <Label layoutX="307.0" layoutY="249.0" text="\% discount from the full price" />
+      <Label layoutX="381.0" layoutY="267.0" text="\% discount for paying in advance" />
+      <Label layoutX="118.0" layoutY="301.0" text="Group visit" />
+      <Label layoutX="118.0" layoutY="319.0" text="Casual visitor" />
+      <Label layoutX="305.0" layoutY="301.0" text="\% discount from the full price" />
+      <TextField fx:id="PersonalFamilyVisit" disable="true" editable="false" layoutX="282.0" layoutY="135.0" prefHeight="25.0" prefWidth="27.0" />
+      <Label layoutX="283.0" layoutY="156.0" prefHeight="17.0" prefWidth="78.0" text="An additional" />
+      <TextField fx:id="Prebooked" disable="true" layoutX="356.0" layoutY="154.0" prefHeight="25.0" prefWidth="27.0" text=" " />
+      <Label layoutX="283.0" layoutY="210.0" text="An additional " />
+      <TextField fx:id="Prebooked1" disable="true" editable="false" layoutX="355.0" layoutY="206.0" prefHeight="25.0" prefWidth="27.0" text=" " />
+      <TextField fx:id="Groupvisit" disable="true" layoutX="282.0" layoutY="245.0" prefHeight="25.0" prefWidth="27.0" text=" " />
+      <TextField fx:id="Prebookedinstructor" disable="true" layoutX="356.0" layoutY="263.0" prefHeight="25.0" prefWidth="27.0" text=" " />
+      <Label layoutX="283.0" layoutY="267.0" text="An additional " />
+      <TextField fx:id="Casualvisitorinstructor" disable="true" layoutX="279.0" layoutY="297.0" prefHeight="25.0" prefWidth="27.0" text=" " />
+      <TextField fx:id="parkname" disable="true" editable="false" layoutX="366.0" layoutY="59.0" prefHeight="25.0" prefWidth="58.0" />
+   </children>
+</AnchorPane>

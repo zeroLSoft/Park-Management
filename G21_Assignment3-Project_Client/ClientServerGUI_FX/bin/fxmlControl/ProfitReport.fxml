@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="962.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProfitReportControl">
+   <children>
+      <Label layoutX="397.0" layoutY="14.0" text="Monthly Profit Report">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSend" layoutX="779.0" layoutY="885.0" mnemonicParsing="false" onAction="#getSendBtn" text="Send report departmant" />
+      <Button fx:id="btnSave" layoutX="670.0" layoutY="885.0" mnemonicParsing="false" onAction="#getSaveBtn" text="Save to PC " />
+      <Button fx:id="btnReturn" layoutX="1110.0" layoutY="915.0" mnemonicParsing="false" onAction="#getReturnBtn" text="Return" />
+      <Label layoutX="57.0" layoutY="857.0" text="want to save the report to PC?" />
+      <Label layoutX="57.0" layoutY="889.0" text="Write location:" />
+      <TextField fx:id="txtLocation" layoutX="148.0" layoutY="885.0" prefHeight="25.0" prefWidth="511.0" />
+      <Text layoutX="148.0" layoutY="932.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EX:   C:/Program Files/admin/Report.txt" />
+      <Label layoutX="57.0" layoutY="100.0" text="Select year of report:" />
+      <Label layoutX="382.0" layoutY="100.0" text="Select month of report:" />
+      <ComboBox fx:id="yearc" layoutX="176.0" layoutY="96.0" prefWidth="150.0" />
+      <ComboBox fx:id="date" layoutX="520.0" layoutY="96.0" prefWidth="150.0" />
+      <Button fx:id="btnMakeRport" layoutX="790.0" layoutY="96.0" mnemonicParsing="false" onAction="#getMakeReportBtn" text="Make Report" />
+      <TableView fx:id="tableview" layoutX="55.0" layoutY="133.0" prefHeight="711.0" prefWidth="1151.0">
+        <columns>
+          <TableColumn fx:id="DayhCol" prefWidth="89.0" text="Day" />
+          <TableColumn fx:id="SingleCol" prefWidth="78.0" text="Single" />
+            <TableColumn fx:id="SingleProfitCol" prefWidth="156.0" text="Single Profit" />
+            <TableColumn fx:id="GroupCol" prefWidth="164.0" text="Total Groups" />
+            <TableColumn fx:id="GroupProfitCol" prefWidth="123.0" text="Group Profit" />
+            <TableColumn fx:id="SubscriptionCol" prefWidth="172.0" text="Total  Subscriptions" />
+            <TableColumn fx:id="SubscriptionProfitCol" minWidth="4.0" prefWidth="189.0" text="Subscription Profit" />
+            <TableColumn fx:id="Profit" prefWidth="179.0" text="Total day profit" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

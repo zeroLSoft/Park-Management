@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewParametersControl">
+   <children>
+      <Pane prefHeight="544.0" prefWidth="721.0">
+         <children>
+            <Label layoutX="213.0" layoutY="24.0" text="park parameters">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="118.0" text="Maximum visits allowed per hour:" />
+            <Label layoutX="64.0" layoutY="164.0" text="Gap between visits and orders::" />
+            <Label layoutX="64.0" layoutY="207.0" text="Current amount visitors at park:" />
+            <Label layoutX="64.0" layoutY="249.0" text="Visit duration:" />
+            <TextField fx:id="txtMaxVisitsPerDay" editable="false" layoutX="274.0" layoutY="114.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="txtVisitOrderGap" editable="false" layoutX="274.0" layoutY="160.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="CurrentVisitors" editable="false" layoutX="274.0" layoutY="203.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="txtStayTime" editable="false" layoutX="274.0" layoutY="245.0" prefHeight="25.0" prefWidth="73.0" />
+            <Label layoutX="188.0" layoutY="292.0" text="Park discount table">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="360.0" text="Family or single with order:" />
+            <Label layoutX="439.0" layoutY="118.0" text="Open time:" />
+            <Label layoutX="439.0" layoutY="164.0" text="Close time:" />
+            <TextField fx:id="open" editable="false" layoutX="541.0" layoutY="114.0" prefHeight="25.0" prefWidth="89.0" />
+            <TextField fx:id="close" editable="false" layoutX="541.0" layoutY="160.0" prefHeight="25.0" prefWidth="89.0" />
+            <Label layoutX="42.0" layoutY="399.0" text="Subscription: " />
+            <Label layoutX="42.0" layoutY="439.0" text="Full price:" />
+            <TextField fx:id="txtSingleFamilyWithOrder" editable="false" layoutX="213.0" layoutY="356.0" prefHeight="25.0" prefWidth="98.0" />
+            <TextField fx:id="txtSubscription" editable="false" layoutX="213.0" layoutY="395.0" prefHeight="25.0" prefWidth="98.0" />
+            <TextField fx:id="fullPrice" editable="false" layoutX="213.0" layoutY="435.0" prefHeight="25.0" prefWidth="98.0" />
+            <Label layoutX="421.0" layoutY="360.0" text="Group with order:" />
+            <Label layoutX="420.0" layoutY="399.0" text="Group without order:" />
+            <Label layoutX="424.0" layoutY="439.0" text="Advance paid order:" />
+            <TextField fx:id="txtGroupWithOrder" editable="false" layoutX="549.0" layoutY="356.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="txtGroupNoOrder" editable="false" layoutX="549.0" layoutY="395.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="txtAdvancePay" editable="false" layoutX="549.0" layoutY="435.0" prefHeight="25.0" prefWidth="111.0" />
+            <Button fx:id="btnReturn" layoutX="595.0" layoutY="489.0" mnemonicParsing="false" onAction="#getReturnBtn" text="Return" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

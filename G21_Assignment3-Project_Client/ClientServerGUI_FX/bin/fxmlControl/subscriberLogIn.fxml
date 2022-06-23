@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="IMAGE_VIEW" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SubscriberLoginController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="607.0" layoutX="-5.0" layoutY="-2.0">
+         <image>
+            <Image url="background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="253.0" layoutY="82.0" prefHeight="30.0" prefWidth="67.0" text="Log In">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtusername" layoutX="286.0" layoutY="115.0" prefHeight="31.0" prefWidth="157.0" />
+      <Label layoutX="106.0" layoutY="240.0" text="For Order Management insert ID/Subscriber/Order No.">
+         <font>
+            <Font name="David Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" layoutX="286.0" layoutY="262.0" prefHeight="31.0" prefWidth="157.0" />
+      <Label layoutX="211.0" layoutY="120.0" text="Username:" />
+      <Label layoutX="213.0" layoutY="161.0" text="Password:" />
+      <Label layoutX="154.0" layoutY="48.0" text="Subscriber Identification">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="-3.0" prefHeight="62.0" prefWidth="216.0" text="GoNature" textAlignment="CENTER" textFill="#38ab20">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnsubmit" layoutX="287.0" layoutY="200.0" mnemonicParsing="false" onAction="#get_submit_btn" text="Submit">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsubmit2" layoutX="287.0" layoutY="300.0" mnemonicParsing="false" onAction="#get_submit_btn2" text="Submit">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnback" layoutX="80.0" layoutY="336.0" mnemonicParsing="false" onAction="#get_back_btn" text="Back">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtpass" layoutX="286.0" layoutY="157.0" prefHeight="25.0" prefWidth="157.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmantDesitionControl">
+   <children>
+      <Pane prefHeight="535.0" prefWidth="1049.0">
+         <children>
+            <Label layoutX="239.0" layoutY="23.0" text="Parks Desitions for approvle">
+               <font>
+                  <Font name="System Bold Italic" size="43.0" />
+               </font>
+            </Label>
+            <TableView fx:id="DesitionsTable" layoutX="66.0" layoutY="118.0" prefHeight="334.0" prefWidth="939.0">
+              <columns>
+                  <TableColumn fx:id="parkCol" prefWidth="114.0" text="Park" />
+                <TableColumn fx:id="descriptionCol" prefWidth="334.0" text="Description" />
+                <TableColumn fx:id="beforCol" prefWidth="122.0" text="Befor" />
+                  <TableColumn fx:id="afterCol" prefWidth="115.0" text="After" />
+                  <TableColumn fx:id="statusCol" prefWidth="253.0" text="Approvle" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnSave" layoutX="176.0" layoutY="475.0" mnemonicParsing="false" onAction="#getSaveBtn" text="Save" />
+            <Button fx:id="btnCancel" layoutX="744.0" layoutY="475.0" mnemonicParsing="false" onAction="#getCancelBtn" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

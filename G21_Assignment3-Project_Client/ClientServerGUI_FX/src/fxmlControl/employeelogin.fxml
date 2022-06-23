@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<TextFlow xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.employeeloginController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="626.0">
+         <children>
+            <Label layoutX="197.0" layoutY="66.0" prefHeight="53.0" prefWidth="323.0" text="Employment Area">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idtxt" layoutX="242.0" layoutY="131.0" />
+            <TextField fx:id="passtxt" layoutX="242.0" layoutY="178.0" />
+            <Label layoutX="169.0" layoutY="136.0" text="WorkerID" />
+            <Label layoutX="169.0" layoutY="183.0" text="Password" />
+            <Button fx:id="enterbtn" layoutX="451.0" layoutY="325.0" mnemonicParsing="false" onAction="#getEnterBtn" text="Enter">
+               <font>
+                  <Font name="David Bold" size="15.0" />
+               </font></Button>
+            <Label layoutX="208.0" layoutY="4.0" prefHeight="62.0" prefWidth="216.0" text="GoNature" textAlignment="CENTER" textFill="#38ab20">
+               <font>
+                  <Font name="System Bold Italic" size="39.0" />
+               </font>
+            </Label>
+            <Button fx:id="backbtn" layoutX="120.0" layoutY="325.0" mnemonicParsing="false" onAction="#getBackBtn" text="Back">
+               <font>
+                  <Font name="David Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="94.0" fitWidth="149.0" layoutX="242.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="employ.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</TextFlow>
